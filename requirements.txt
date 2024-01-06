@@ -1,0 +1,6 @@
+google-play-scraper
+requests
+streamlit
+pandas
+gspread
+oauth2client
