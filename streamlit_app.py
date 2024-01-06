@@ -121,7 +121,7 @@ def main():
         df = df[df["realInstalls"] >= min_realInstalls]
         # Filter out invalid emails
         len_before = len(df)
-        df = df[~df["developerEmail"].str.contains("|".join(INVALID_EMAILS_LIST))]
+        # df = df[~df["developerEmail"].str.contains("|".join(INVALID_EMAILS_LIST))]
         st.write(f"Filter out {len_before - len(df)} apps with invalid emails")
         st.markdown(f"# Top {len(df)} results")
         st.markdown(f"{original_len} apps founds in google store search")
